@@ -5,17 +5,11 @@ node_js:
 branches:
   only:
     - master
-    - travis
-    - code-analysis-and-unit-test
 
 addons:
   chrome: stable
 
-before_script:
-  - yarn global add @angular/cli
-
 cache:
-  yarn: true
   directories:
     - node_modules
 
