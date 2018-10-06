@@ -6,6 +6,7 @@ branches:
   only:
     - master
     - travis
+    - code-analysis-and-unit-test
 
 addons:
   chrome: stable
