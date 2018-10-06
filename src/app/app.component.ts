@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Travis-CI';
+  title = 'Travis-CI';  
+  var err = "injected error";
 }
