@@ -6,6 +6,7 @@ branches:
   only:
     - master
     - travis
+    - code-analysis-and-unit-test
 
 addons:
   chrome: stable
@@ -19,15 +20,14 @@ cache:
     - node_modules
 
 script:
-  - ng lint
-  - ng test --watch=false
   - ng build --prod
-  
+
 
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
-  local-dir: ./dist/Travis-CI
+  local-dir: ./dist
   on:
+    branch: master
